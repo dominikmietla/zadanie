@@ -1,0 +1,107 @@
+$main-color: #f3f2f3;
+$border-color: #cacaca;
+$btn-color: #43b472;
+body {
+    margin: 0;
+
+}
+header{
+    background-color: $main-color;
+    border-bottom: 1px solid $border-color;
+ 
+    
+
+nav{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: center;
+
+    button{
+    height: 35px;
+    width: 90px;
+    background-color: $btn-color;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+  
+}
+}
+
+#logo{
+        max-width: 300px;
+        width: 100%;
+    
+} 
+section{
+max-width: 1140px;
+width: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+
+     .product{
+         height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $main-color;
+        border: 1px solid $border-color;
+        margin-top: 30px;
+       
+        .image-container{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img.product-image{
+                max-width: 200px;
+        
+               
+            }
+        }
+
+     }
+     
+         button{
+             background-color: $btn-color;
+             border: none;
+             width: 50%;
+             height: 40px;
+             color: #fff;
+         }
+     
+   
+    
+}
+@media (max-width: 600px) {
+  
+    section{
+        justify-content: space-around;
+    }
+  }
+
+  @media (max-width: 415px) {
+
+   #logo{
+       width: 100%;
+       max-width: 200px;
+   }
+  }
+
+  @media (max-width: 300px) {
+
+    #logo{
+        width: 100%;
+        max-width: 150px;
+    }
+   }
